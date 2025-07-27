@@ -1,0 +1,5 @@
+rows =5
+i=rows 
+while i>0:
+    print(" * "*i)
+    i-=1
