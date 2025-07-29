@@ -1,0 +1,11 @@
+# inverted pyramid 
+
+rows=5
+
+i=rows
+
+while i>0:
+
+    print(' '*(rows-i)+"*"*(2*i-1))
+    
+    i-=1
