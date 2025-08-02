@@ -1,0 +1,19 @@
+no_of_rows=5
+
+rows=no_of_rows
+
+
+while rows >0:
+    number=no_of_rows
+    column=no_of_rows
+
+
+    while column>=rows:
+        print(number,end=" ")
+
+        number-=1
+        column-=1
+
+        
+    print()
+    rows-=1
