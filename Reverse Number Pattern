@@ -1,0 +1,15 @@
+rows=5
+
+row=rows
+
+
+while row>=1:
+
+    column=row
+    while column>=1:
+
+        print(column,end=" ")
+        column-=1
+
+    print()
+    row-=1
