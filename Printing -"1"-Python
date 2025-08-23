@@ -1,0 +1,11 @@
+def print_one():
+    for row in range(5):  # 5 rows for height
+        for col in range(5):  # 5 columns for width
+            if col == 2:      # only print stars in the middle column
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()  
+
+# call the function
+print_one()
