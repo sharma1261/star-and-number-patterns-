@@ -1,0 +1,43 @@
+def print_four(size):
+
+    """Function to print the number 4 with stars."""
+    try:
+
+        for row in range(size):
+            for col in range(size):
+
+                # Conditions to draw "4"
+
+                if col == size - 1 or row == size // 2 or col == 0 and row < size // 2:
+                    print("*", end=" ")
+
+                else:
+                    print(" ", end=" ")
+
+            print()  # new line after each row
+
+    except Exception as e:
+        print("An error occurred:", e)
+
+
+def main():
+
+    try:
+
+        size = int(input("Enter the size of 4 (e.g., 5 or 7): "))
+
+        if size < 5:
+            print("Size too small! Please enter 5 or more.")
+
+        else:
+            print_four(size)
+
+    except ValueError:
+        print("Please enter a valid number.")
+
+    except Exception as e:
+        print("Unexpected error:", e)
+
+
+if __name__ == "__main__":
+    main()
