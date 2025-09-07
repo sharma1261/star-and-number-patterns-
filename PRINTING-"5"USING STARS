@@ -1,0 +1,19 @@
+def print_five(height=7, width=5):
+
+    mid = height // 2   # middle row index
+
+for row in range(height):
+
+    if row == 0 or row == mid or row == height - 1:
+
+            print("*" * width)       # top, middle, bottom
+
+    elif row < mid:
+            print("*")               # upper left bar
+
+    else:
+            print(" " * (width - 1) + "*")  # lower right bar
+
+# Example calls
+print_five()        # default 7x5
+print()
