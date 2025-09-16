@@ -1,0 +1,32 @@
+def draw_six():
+    try:
+        rows = 7
+        cols = 5
+
+        for i in range(rows):
+
+            for j in range(cols):
+
+                # top, middle, bottom lines
+                if i == 0 or i == rows // 2 or i == rows - 1:
+                    print("*", end="")
+
+                # left side
+                elif i < rows // 2 and j == 0:
+                    print("*", end="")
+
+                # lower loop (left & right sides)
+                elif i > rows // 2 and (j == 0 or j == cols - 1):
+                    print("*", end="")
+
+                else:
+                    print(" ", end="")
+
+            print()  # move to next row
+
+    except Exception as e:
+        print("Error:", e)
+
+
+# Call function
+draw_six()
