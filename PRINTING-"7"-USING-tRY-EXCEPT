@@ -1,0 +1,12 @@
+def print_seven(n):
+    try:
+        for i in range(n):
+            if i == 0:
+                print("*" * n)  # top horizontal line
+            else:
+                print(" " * (n - 1) + "*")  # vertical line on the right
+    except Exception as e:
+        print("An error occurred:", e)
+
+# Call the function
+print_seven(5)
